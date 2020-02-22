@@ -54,7 +54,7 @@ val fields = arrayOf(
         "licenseEndorsementsCode",
         "License Endorsements Code"
     ),
-    IdField("DAU", "heightInFt_In", "Height in FT_IN"),
+    IdField("DAU", "heightInFtIn", "Height in FT_IN"),
     IdField("DAV", "heightInCm", "Height in CM"),
     IdField("DAW", "weightInLbs", "Weight in LBS"),
     IdField("DAX", "weightInKg", "Weight in KG"),
@@ -72,7 +72,7 @@ val fields = arrayOf(
     IdField("DBF", "numberOfDuplicates", "Number of Duplicates"),
     IdField("DBG", "medicalIndicatorCodes", "Medical Indicator Codes"),
     IdField("DBH", "organDonor", "Organ Donor"),
-    IdField("DBI", "non-fieldName", "Non-Resident Indicator"),
+    IdField("DBI", "nonResidentIndicator", "Non-Resident Indicator"),
     IdField(
         "DBJ",
         "uniqueCustomerIdentifier",

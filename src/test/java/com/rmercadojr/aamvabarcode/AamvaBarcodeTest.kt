@@ -9,5 +9,8 @@ internal class AamvaBarcodeTest {
         val aamvaBarcode = AamvaBarcode(tnLicenseTest)
         assertThat(aamvaBarcode.header).isNotNull
         assertThat(aamvaBarcode.subfiles).hasSize(2)
+
+        val identification = Identification(aamvaBarcode.subfiles[0].fields)
+        println(aamvaBarcode)
     }
 }

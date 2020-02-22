@@ -1,13 +1,13 @@
 package com.rmercadojr.aamvabarcode
 
-class AamvaBarcode(private val rawBarcode: String) {
+data class AamvaBarcode(private val rawBarcode: String) {
     companion object {
         private const val DESIGNATOR_START = 21
         private const val DESIGNATOR_SIZE = 10
     }
 
-    val header = parseHeader()
-    val subfiles = parseSubfiles(header.numberOfEntries)
+    val header: Header = parseHeader()
+    val subfiles: List<Subfile> = parseSubfiles(header.numberOfEntries)
 
     private fun parseHeader() = Header(rawBarcode.substring(0 until DESIGNATOR_START))
 
